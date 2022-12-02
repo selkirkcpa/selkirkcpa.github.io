@@ -71,7 +71,7 @@
 				});
 
 		// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
-			if (browser.os == 'wp' && browser.osVersion < 10)
+			if (browser.os == true && browser.osVersion < 10)
 				$('#navButton, #navPanel, #page-wrapper')
 					.css('transition', 'none');
 
